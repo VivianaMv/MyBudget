@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="Money.css">
+</head>
+
+<body>
+    <header class="header">
+
+        <img id="log" src="./image/budget-planner-check-list-money-planner_135595-76526.avif" alt="">
+        <h1 style="font-size:5vw">My Money My Budget</h1>
+        <div class="log"> </div>
+
+    </header>
+    <div style="margin-top: 20px;">
+        <BR><BR>
+        <nav>
+            <ul class="head">
+                <li class="head"> <a href="MyBudget.html"> Home </a></li>
+                <li class="head"> <a href="Budget.html">Create Budget </a></li>
+                <li class="head"> <a href="Result.html">Current Balance </a></li>
+            </ul>
+        </nav>
+    </div>
+
+
+    <div class="form-group" style="size-adjust:20px ;">
+        <img id="login" src="./image/login.jpg" alt="login"><br>
+        <div>
+            <input type="text"  id="name" name="name" placeholder="Username"> <br> <br>
+            <span id="nameerr" class="error"></span>
+            <input type="password" id="password" placeholder="Password">
+            <br><br>
+            <span id="passworderr" class="error"></span>
+            <button id="Tologin" onclick="login()">To log in</button>
+            <br><br>
+            <p> Don't you have an account?</p><br>
+            <button id="TologinAccount" onclick="goCreateAccount()">Create an account</button>
+
+        </div>
+    </div>
+    <nav>
+        <ul class="head">
+            <li class="footer"> <a href="Privacy.html"> Privacy </a></li>
+            <li class="footer"> <a href="News.html">News </a></li>
+        </ul>
+
+        <div id="oklogin"></div>
+</body>
+
+<script>
+    // function login() {
+    //     window.location.href = "Budget.html";
+    // }
+
+    function goCreateAccount() {
+        window.location.href = "Createaccount.html";
+    }
+
+
+
+    function login() {
+        const nameInput = document.getElementById('name').value;
+        const passwordInput = document.getElementById('password').value;
+
+
+        var nameInputPAttern = /^[a-zA-Z\s]+$/;
+        var passwordInputPAttern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+        console.log(nameInput)
+        console.log(passwordInput)
+
+
+        var isvalid = true;
+
+
+        if (!nameInputPAttern.test(nameInput)) {
+            document.getElementById('nameerr').innerHTML = 'INVALID NAME';
+            isvalid = false;
+        } else {
+            document.getElementById('nameerr').innerHTML = '';
+        }
+        if (!passwordInputPAttern.test(passwordInput)) {
+            document.getElementById('passworderr').innerHTML = 'INVALID PASSWORD';
+            isvalid = false;
+        }
+
+        window.location.href = "Budget.html";
+    }
+
+
+
+
+</script>
+
+</html>

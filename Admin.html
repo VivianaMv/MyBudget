@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Money My Budget</title>
+    <link rel="stylesheet" type="text/css" href="Money.css">
+
+
+</head>
+
+<body>
+
+    <header class="header">
+
+        <img id="log" src="./image/budget-planner-check-list-money-planner_135595-76526.avif" alt="">
+        <h1 style="font-size:5vw">My Money My Budget</h1>
+        <div class="log">
+
+
+
+    </header>
+    <div>
+        <br><BR>
+        <nav>
+            <ul class="head">
+              
+                    <li class="head"> <a href="MyBudget.html"> Home </a></li>
+                    <li class="head"> <a href="Budget.html">Create Budget </a></li>
+                    <li class="head"> <a href="Result.html">Current Balance </a></li>
+                </ul>
+        </nav>
+    </div>
+    <div class="form-group">
+
+        
+        <table id="table">
+         
+            <td>
+                
+                <img src="./image/AdminPanel.jpg" alt="login">
+            </td>
+            <td id="table">
+                <h1 style="font-size: 2vw;">Admin Panel</h1>
+                <br><br> 
+                <input  type="text" name="name" size="30" placeholder="Create User "> <br> <br>
+                <input  type="text" name="name" size="30" placeholder="Delete User"> <br> <br>
+                <input  type="password" id="name" size="30" placeholder="Assing Permitions"><br><br> 
+                <input  type="password" id="name" size="30" placeholder="Manage Database">
+
+            </td>
+        </table>
+        </div>
+        
+        <div class="flexbox">
+        <!-- </div> -->
+        <button id="Panel" onclick="login()">Apply</button> <br><br>
+        <button id="Panel" onclick="login()">Cancel</button> <br><br>
+    </div>
+    <div>
+        <nav>
+            <ul class="head">
+                <li class="footer"> <a href="Privacy.html"> Privacy </a></li>
+                <li class="footer"> <a href="News.html">News </a></li>
+            </ul>
+
+        </nav>
+    </div>
+    <script>
+        function login() {
+            window.location.href = "Budget.html";
+        }
+    </script>
+</body>
+
+</html>

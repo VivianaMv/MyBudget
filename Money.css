@@ -1,0 +1,244 @@
+*{
+    box-sizing: border-box;
+
+    padding: 5px ;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1vw;
+
+}
+a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 2vw;
+}
+nav a:hover{
+    color:  green;
+}
+   
+
+body{
+    background-color: white
+}
+.header{
+    background-color: white(207, 230, 174);
+    color: green;
+    font-weight: bold;
+    display: flex;
+   
+    align-items: center;
+    height: 200px;
+    padding:  10% 10%;
+    cursor: pointer;
+    padding-top: 10%;
+    flex-basis: 20rem;
+    flex-grow: 1;
+   
+}
+.header2{
+   
+
+    margin-left: 10px;
+
+}
+
+.head{
+    background-color: rgb(164, 207, 193);
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    margin: 0 20px;
+    justify-content: space-around;
+    font-style: oblique;
+    color: azure;
+    padding: 1% ;
+    margin-top: 1%;
+    min-height: 70px;
+
+
+
+}.footer{
+    /* width: 1000%; */
+    margin: 0%;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 2%;
+
+} 
+
+#p{
+    font-size:x-large;
+    font-style: italic;
+    padding: 100px;
+    justify-content: center;
+    color: black;
+    margin: 1% 1% 1% 1%;
+    font-size:xx-large;
+   
+}
+
+#goTologin{
+   
+    margin-top: 3%;
+    padding:  2%;
+    background-color:  green;
+    border-radius: 10%;
+    color: azure;
+    cursor: pointer;
+    margin-left: 45%;
+    
+ }
+ .form-group{
+    /* background-color:azure; */
+    /* padding: 1%; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 40%;
+    align-items: center;
+    margin: 10px auto;
+    margin-top: 20px;
+    border-radius: 5%;
+    margin-bottom: 20px;
+  
+ }  
+#Tologin{
+    margin-top: 5%;
+    padding:  20px;
+    align-items: center;
+    background-color:  green;
+    border-radius: 10%;
+    color: azure;
+    cursor: pointer;
+    margin-left: 30%;
+}
+#TologinAccount{
+
+
+    background-color:  green;
+    border-radius: 10%;
+    padding: 20px;
+    width: 150px;
+    color: azure;
+    cursor: pointer;
+    margin-left: 30%;
+
+}
+#TologinAccount1{
+    padding:  2%;
+    background-color:  green;
+    border-radius: 10%;
+    color: azure;
+    cursor: pointer;
+    margin-left: 50%;
+
+}
+
+#table{
+    padding: 2%;
+    text-align: center;
+    border-radius: 10%;
+    
+}#Profile, #Start{
+    color: green;
+   font-size:3vw;
+}
+.btnProfile{
+    margin-top: 1%;
+    padding:  2%;
+    background-color:  green;
+    border-radius: 10%;
+    color: azure;
+    cursor: pointer;
+    align-items: center;
+    margin-left: 70px;
+    width: 150px;
+
+}
+.btnBudget{
+    margin-top: 1%;
+    padding:  2%;
+    background-color:  rgb(0, 9, 128);
+    border-radius: 10%;
+    color: azure;
+    cursor: pointer;
+    align-items: center;
+    margin-left: 50px;
+    /* width: 150px; */
+    
+}    
+.ListBudget{
+    background-color:azure;
+    padding: 2%;
+    display: flex;
+    flex-direction: column;
+    grid-row: auto auto auto auto;
+    justify-content: center;
+    width: 40%;
+    align-items: center;
+  
+    margin-top: 5%;
+
+}
+.final{
+    padding: 10px;
+    border: solid green;
+    text-align: center;
+    align-items: center;
+}
+.flexbox {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center  ;
+    
+ }
+ #foot{
+    margin-top: 1%; 
+    margin-left: 4%;
+}
+
+ #NegativeBalance{
+    color: red;
+    font-weight: bold;
+    margin: auto 0%;
+    margin-left: 50%;
+    width: 150px;
+
+ }
+ #btnResult{
+   
+    padding:  3%;
+    align-items: center;
+    background-color:  rgb(45, 0, 128);
+    border-radius: 10%;
+    color: azure;
+    cursor: pointer;
+    margin-left: 45%;
+    font-size: 1vw;
+    /* width: 150px; */
+ }
+ #AdminPanel{
+    padding:  4%;
+    background-color:  green;
+    border-radius: 10%;
+    color: azure;
+    cursor: pointer;
+    margin-left: 40%;
+    font-size: 2vw;
+    width: 100%;
+
+ }
+ #Panel{
+    margin-top: 1%;
+    padding:  2%;
+    background-color:  green;
+    border-radius: 10%;
+    color: azure;
+    cursor: pointer;
+    align-items: center;
+    margin-left: 60px;
+
+
+ }

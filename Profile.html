@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Money My Budget</title>
+    <link rel="stylesheet" type="text/css" href="Money.css">
+
+
+</head>
+
+<body>
+
+    <header class="header">
+
+        <img id="log" src="./image/budget-planner-check-list-money-planner_135595-76526.avif" alt="">
+        <h1 style="font-size:5vw">My Money My Budget</h1>
+        <div class="log"></div><BR>
+
+    </header>
+    <div>
+        <BR><BR>
+        <nav>
+            <ul class="head">
+                <li class="head"> <a href="MyBudget.html"> Home </a></li>
+                <li class="head"> <a href="Budget.html">Create Budget </a></li>
+                <li class="head"> <a href="Result.html">Current Balance </a></li>
+            </ul>
+        </nav>
+        </div>
+        <div class="form-group">
+            <h1 id="Profile">Profile</h1><br> <br>
+
+            <input id="table" type="text" name="Ocupation" size="30" placeholder="Ocupation"> <br> <br>
+            <input id="table" type="number" name="Age" size="30" placeholder="Age"> <br> <br>
+            <input id="table" type="number" id="Dependents" size="30" placeholder="Dependents">
+
+
+        </div>
+        <div class="flexbox">
+
+            <button class="btnProfile" onclick="login()">Back</button>
+            <button class="btnProfile" onclick="Budget()">Next</button> <br>
+        </div>
+        <nav>
+            <br>
+            <ul class="head">
+                <li class="footer"> <a href="Privacy.html"> Privacy </a></li>
+                <li class="footer"> <a href="News.html">News </a></li>
+            </ul>
+
+        </nav>
+
+        <script>
+            function Budget() {
+                window.location.href = "Budget.html";
+            }
+            function login() {
+                window.location.href = "login.html";
+            }
+
+        </script>
+</body>
+
+</html>

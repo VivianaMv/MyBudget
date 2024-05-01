@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Money My Budget</title>
+    <link rel="stylesheet" type="text/css" href="Money.css">
+
+
+</head>
+
+<body>
+    <header class="header">
+
+        <img id="log" src="./image/budget-planner-check-list-money-planner_135595-76526.avif" alt="">
+        <h1 style="font-size:5vw">My Money My Budget</h1>
+        <div class="log">
+
+    </header  >
+    <div>
+        <nav >
+           <ul class="head">
+               <li class="head"> <a href="MyBudget.html"> Home </a></li>
+                   <li class="head"> <a href="Budget.html">Create Budget </a></li>
+                   <li class="head"> <a href="Result.html">Current Balance </a></li>
+           </ul>
+       </nav>
+       </div>
+
+
+        <div class="form-group">
+            <h1 id="Profile" style="font-size:3vw">How is your Money now</h1>
+            <table >
+                <tr >
+                    <th >
+                        Type
+                    </th>
+                    <th>
+                        Amount
+                    </th>
+
+                </tr>
+                <tr>
+                    <td  class="final"> Income</td>
+                    <td  class="final" id="FinalIncome"> </td>
+                </tr>
+                <tr>
+                    <td class="final"> Bills</td>
+                    <td  class="final" id="FinalBills"> </td>
+                </tr>
+                <tr>
+                    <td  class="final"> Debts</td>
+                    <td  class="final" id="FinalDebts"> </td>
+                </tr>
+                <tr>
+                    <td  class="final"> Miscellaneous</td>
+                    <td  class="final" id="FinalMiscellaneous" > </td>
+                </tr>
+                <tr>
+                    <td  class="final" > Savings</td>
+                    <td  class="final" id="FinalSavings"> </td>
+                </tr> <br> <br>
+                <th> <br> 
+                    Current balance
+                </th>
+                <tr>
+                    <td  class="final" id="CurrentBalance"> </td>
+                </tr><br><br>
+
+            </table>
+        </div>
+        <div>
+            <span id="NegativeBalance"></span><br><br>
+            <button id="btnResult" onclick="Budget()">Back</button>
+        <br>
+    </div>
+
+            <div>
+        <nav>
+            <br>
+            <ul class="head">
+                <li class="footer"> <a href="Privacy.html"> Privacy </a></li>
+                <li class="footer"> <a href="News.html">News </a></li>
+            </ul>
+        </div>
+        </nav>
+
+        <script>
+
+
+            var Income=sessionStorage.getItem('Income');
+            var Bills=sessionStorage.getItem('Bills');
+            var Debts=sessionStorage.getItem('Debts');
+            var Miscellaneous=sessionStorage.getItem('Miscellaneous');
+            var Savings=sessionStorage.getItem('Savings');
+
+            // console.log(Income)
+            // console.log(Bills)
+            // console.log(Debts)
+            // console.log(Miscellaneous)
+            // console.log(Savings)
+
+            document.getElementById('FinalIncome').innerHTML=Income;
+            document.getElementById('FinalBills').innerHTML=Bills;
+            document.getElementById('FinalDebts').innerHTML=Debts;
+            document.getElementById('FinalMiscellaneous').innerHTML=Miscellaneous;
+            document.getElementById('FinalSavings').innerHTML=Savings;
+
+            var CurrentBalance = Income - Bills - Debts - Miscellaneous - Savings;
+            document.getElementById('CurrentBalance').innerHTML = CurrentBalance;
+
+            if (CurrentBalance < 1){
+                document.getElementById('NegativeBalance').innerHTML=`Negative Balance`
+            }
+
+            function Budget() {
+                window.location.href = "Budget.html";
+            }
+        </script>
+</body>
+
+</html>

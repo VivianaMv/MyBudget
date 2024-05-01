@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Money My Budget</title>
+    <link rel="stylesheet" type="text/css" href="Money.css">
+
+
+</head>
+
+<body>
+
+    <header class="header">
+
+        <img id="log" src="./image/budget-planner-check-list-money-planner_135595-76526.avif" alt="">
+        <h1 style="font-size:5vw">My Money My Budget</h1>
+        <div class="log">
+
+    </header >
+    <div>
+        <BR>
+        <nav>
+            <ul class="head">
+                <li class="head"> <a href="MyBudget.html"> Home </a></li>
+                <li class="head"> <a href="Budget.html">Create Budget </a></li>
+                <li class="head"> <a href="Result.html">Current Balance </a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <form id="transactionForm">
+        <div class="form-group">
+            <h1 id="Start"> Start !</h1> <br>
+        </div>
+        <div class="form-group">
+            <label for="Income"> </label>
+            <input id="Income" type="number" name="Income" placeholder=" Enter your income">
+        </div>
+        <div class="form-group">
+            <label for="Bills"> </label>
+            <input id="Bills" type="number" name="Bills" placeholder=" Enter your bills">
+        </div>
+        <div class="form-group">
+            <label for="Debts"> </label>
+            <input id="Debts" type="number" id="Debts" placeholder=" Enter your debts">
+        </div>
+        <div class="form-group">
+            <label for="Miscellaneous"> </label>
+            <input id="Miscellaneous" type="number" id="Miscellaneous" placeholder=" Enter your miscellaneous">
+        </div>
+        <div class="form-group">
+            <label for="Savings"> </label>
+            <input id="Savings" type="number" id="Savings" placeholder=" Enter your savings"> <br><br>
+    </form>
+
+
+
+    </div>
+    <div class="flexbox">
+        <button class="btnBudget" onclick="Profile()">Back</button>
+        <button class="btnBudget" onclick="submitForm()">Submit</button>
+    </div>
+
+
+    </div>
+
+    <nav>
+        <br>
+        <ul class="head">
+            <li class="footer"> <a href="Privacy.html"> Privacy </a></li>
+            <li class="footer"> <a href="News.html">News </a></li>
+        </ul>
+
+    </nav>
+
+
+
+    </div>
+
+    <script>
+
+
+        function Profile() {
+            window.location.href = "login.html";
+        }
+       
+        function submitForm() {
+            const IncomeInput = parseFloat(document.getElementById('Income').value);
+            const BillsInput = parseFloat(document.getElementById('Bills').value);
+            const DebtsInput = parseFloat(document.getElementById('Debts').value);
+            const MiscellaneousInput = parseFloat(document.getElementById('Miscellaneous').value);
+            const SavingsInput = parseFloat(document.getElementById('Savings').value);
+
+            console.log(IncomeInput)
+            console.log(BillsInput)
+            console.log(DebtsInput)
+            console.log(MiscellaneousInput)
+            console.log(SavingsInput)
+
+
+            sessionStorage.setItem('Income', IncomeInput);
+            sessionStorage.setItem('Bills', BillsInput);
+            sessionStorage.setItem('Debts', DebtsInput);
+            sessionStorage.setItem('Miscellaneous', MiscellaneousInput);
+            sessionStorage.setItem('Savings', SavingsInput);
+
+            window.location.href = "Result.html";
+        }
+
+
+    </script>
+
+
+
+</body>
+
+</html>
